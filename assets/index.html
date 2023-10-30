@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly No Ads Unlimited</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="game-container">
+    <div class="new" id="new2" style="display: none">New Game</div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="banner" id="banner">
+                You Won!
+                <span class="close">&times;</span>
+            </div>
+            <p>The answer was:</p>
+            <div class="answerHold"><p id="answer"></p></div>
+            <div class="new" id="new" style="margin-bottom: 20px">New Game</div>
+        </div>
+
+    </div>
+
+    <div id="statsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="banner" id="banner">
+                Statistics
+                <span class="close">&times;</span>
+            </div>
+            <div class="statsInfoRow">
+                <div class="statsInfoBox">
+                    <p id="gamesPlayed">x</p>
+                    <subscript>Games Played</subscript>
+                </div>
+                <div class="statsInfoBox">
+                    <p id="gamesWon">x</p>
+                    <subscript>Games Won</subscript>
+                </div>
+                <div class="statsInfoBox">
+                    <p id="percentWins">x</p>
+                    <subscript>% Wins</subscript>
+                </div>
+            </div>
+            <div class="distribution">
+                <div class="bar-chart">
+                    <div class="bar-row">
+                        <label>1</label>
+                        <div class="bar" data-value="100"><span class="marker"></span></div>
+                        <label class="labelPercent">100%</label>
+                    </div>
+                    <div class="bar-row">
+                        <label>2</label>
+                        <div class="bar" data-value="70"><span class="marker"></span></div>
+                        <label class="labelPercent">44%</label>
+                    </div>
+                    <div class="bar-row">
+                        <label>3</label>
+                        <div class="bar" data-value="50"><span class="marker"></span></div>
+                        <label class="labelPercent">44%</label>
+                    </div>
+                    <div class="bar-row">
+                        <label>4</label>
+                        <div class="bar" data-value="70"><span class="marker"></span></div>
+                        <label class="labelPercent">44%</label>
+                    </div>
+                    <div class="bar-row">
+                        <label>5</label>
+                        <div class="bar" data-value="50"><span class="marker"></span></div>
+                        <label class="labelPercent">44%</label>
+                    </div>
+                    <div class="bar-row">
+                        <label>6</label>
+                        <div class="bar" data-value="70"><span class="marker"></span></div>
+                        <label class="labelPercent">44%</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="modal3" class="modal">
+        <center>
+            <!-- Modal content -->
+            <div class="modal-content modal3">
+                <p>That word is not in the word list!</p>
+                <div class="new" id="closeList">OK</div>
+            </div>
+        </center>
+    </div>
+
+    <div class="header">
+        <p id="stats">Stats</p>
+    </div>
+    <div class="answer"></div>
+    <div id="guesses">
+        <!-- Rows are populated by JavaScript -->
+    </div>
+    <div id="keyboard"></div>
+    <p id="resultMessage"></p>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
